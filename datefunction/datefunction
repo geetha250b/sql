@@ -1,0 +1,27 @@
+select current_timestamp from dual;
+#it shows current time with date
+
+select current_date from dual
+#itshows current date
+
+select last_date(to_date('08-dec-2021','dd-mm-yyyy')) from dual;
+#it shows last date of month
+
+select next_day('08-dec-2021','wednesday') from dual;
+#it shows next day of specified day
+select sysdate from dual;
+#it shows current date 
+select systimestamp from dual;
+#itshows current time with date and zone
+select sessiontimezone from dual;
+#itshows zone
+select localtimestamp from dual;
+#itshows time with date
+select extract(day from date '21-dec-2021');
+#extract specified day or year or nonth
+select Months_between('01-jan-2022','21-dec-2021');
+#months between specified years
+select ADD_MONTHS('08-dec-2021',3) from dual;
+#adding months
+select to_date('01-jan-2022')-to_date('03-dec-2021') from dual;
+#getting days
